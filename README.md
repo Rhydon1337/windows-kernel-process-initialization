@@ -1,4 +1,4 @@
-# windows-kernel-process-initialization-debugging
+# windows-kernel-process-initialization
 Debug the early stage of process initialization using kernel mode debugging
 
 The function that interesting us for process initialization debugging is the first kernel function which called in CreateProcess - NtCreateUserProcess.
