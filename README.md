@@ -3,7 +3,7 @@ Debug the early stage of process initialization using kernel mode debugging
 
 The function that interesting us for process initialization debugging is the first kernel function which called in CreateProcess - NtCreateUserProcess.
 
-In this function all the magic happens. The part the relevant for us is the first thing that happens after that the kernel allocates the EPROCESS and ETHREAD structures.
+In this function all the magic happens. The part that relevant for us is the first thing that happens after that the kernel allocates the EPROCESS and ETHREAD structures.
 
 Therefore, what we need to do is:
 1. bp nt!PspInsertProcess
